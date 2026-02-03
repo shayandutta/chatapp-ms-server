@@ -1,19 +1,24 @@
 {
-  "name": "@chatapp/common",
+  "name": "@chatapp/auth-service",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build" : "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.28.2",
   "dependencies": {
-    "pino": "^10.3.0",
-    "zod": "^4.3.6"
+    "@chatapp/common": "workspace:^",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
   }
 }
